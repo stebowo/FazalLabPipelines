@@ -85,10 +85,14 @@ Now you are ready to run the pipeline! (The other pipelines don't require any se
    ```
    export PATH=/storage/fazal/pipelines/TrimMapCount/scripts:"${PATH}"
    ```
+   Alternatively, if you are doing deep sequencing, we recommend using this path instead.
+
+   ```
+   export PATH=/storage/fazal/data/surbhi/test_novaseq_map_crop75/TrimMapCount/scripts:"${PATH}"
+   ```
+3. Repeat steps 3 and 4 for each subfolder in your experiment's raw data folder.
    
-2. Repeat steps 3 and 4 for each subfolder in your experiment's raw data folder.
-   
-3. Run the following code (replacing the file paths with the paths to your experiment's 
+4. Run the following code (replacing the file paths with the paths to your experiment's 
    raw data and processed data subfolders):
    
    ```
@@ -98,7 +102,7 @@ Now you are ready to run the pipeline! (The other pipelines don't require any se
 
    > **Note:** Run `TrimMapCount -h` or `TrimMapCount --help` if you want to see the help menu.
 
-4. Make sure that the raw data and processed data file paths are correct. Then enter "y" to 
+5. Make sure that the raw data and processed data file paths are correct. Then enter "y" to 
    start the pipeline.
 
 
